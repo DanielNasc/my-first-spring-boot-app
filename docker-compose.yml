@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  postgres:
+    image: postgres
+    container_name: myPostgres
+    environment:
+      - POSTGRES_USER=first
+      - POSTGRES_PASSWORD=senha
+      - POSTGRES_DB=my-first-spring-boot-db
+    ports:
+      - "5432:5432"
+    restart: always
